@@ -15,4 +15,5 @@ function triangular(){
     b.value = '';
     h.value = '';
 
+
 }
