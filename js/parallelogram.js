@@ -6,6 +6,10 @@ function parallelogram(){
     const pd2text = pd2.value;
 
     const ans = parseFloat(pd1text) * parseFloat(pd2text);
-    const area = document.getElementById('pArea');
-    area.innerText = ans;
+    if(!isNaN(ans)){
+        const area = document.getElementById('pArea');
+        area.innerText = ans;
+    }
+
+    setArea(ans,'Parallelogram')
 }

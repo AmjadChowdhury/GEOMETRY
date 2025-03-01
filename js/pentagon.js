@@ -4,6 +4,10 @@ function pentagon(){
 
     const ans = 0.5 *  parseFloat(r1.value) * parseFloat(r2.value);
 
-    const area = document.getElementById('pentagonArea');
-    area.innerText = ans;
+    if(!isNaN(ans)){
+        const area = document.getElementById('pentagonArea');
+        area.innerText = ans;
+    }
+
+    setArea(ans,'Pentagon')
 }

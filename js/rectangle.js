@@ -9,10 +9,14 @@ function rectangle(){
     const rectangled2Textnum = parseFloat(rectangled2Text);
     const ans = rectangled1TextNum * rectangled2Textnum;
 
-    const areaIs = document.getElementById('rectangleArea');
-    areaIs.innerText = ans;
+    if(!isNaN(ans)){
+        const areaIs = document.getElementById('rectangleArea');
+        areaIs.innerText = ans;
+    }
 
     rectangled1.value = '';
     rectangled2.value = '';
+
+    setArea(ans,'Rectangle')
 
 }
